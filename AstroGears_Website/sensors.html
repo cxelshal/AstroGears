@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensor Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="IMG/logo.png" alt="RescueTech Logo">
+    </a>
+    <h1>Sensor Details</h1>
+    <p>Learn more about the sensors and components used in our gauntlet prototype.</p>
+  </header>
+  <nav>
+    <ul class="main-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prototype.html">Discover Our Gauntlet</a></li>
+      <li><a href="sensors.html">Sensor Details</a></li>
+      <li><a href="code.html">Code Implementation</a></li>
+      <li><a href="design.html">Design Process</a></li>
+      <li><a href="Real-TimeData.html" class="real-time">Real-Time Data</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Gas Sensor (MQ-135)</h2>
+    <p>The Gas Sensor (MQ-135) is a gas-sensitive semiconductor sensor that detects dangerous gas leaks and provides early warnings. It is capable of detecting a wide range of gases, including benzene, alcohol, smoke, and other harmful substances commonly found in earthquake-stricken buildings. The sensor's analog output is read using an analog input pin of the Arduino board.</p>
+    <img src="IMG/gas_sensor.png" alt="Gas Sensor (MQ-135)" class="sensor-img">
+    <h3>Key Features:</h3>
+    <ul>
+      <li>Detects multiple types of harmful gases.</li>
+      <li>Provides analog output for gas concentration.</li>
+      <li>Used in conjunction with the Arduino board for real-time gas monitoring.</li>
+    </ul>
+    <p>For more information, refer to the <a href="Files/gas_sensor_datasheet.pdf" target="_blank">Gas Sensor (MQ-135) Datasheet</a>.</p>
+
+    <h2>Temperature and Humidity Sensor (Adafruit AM2320)</h2>
+    <p>The Temperature and Humidity Sensor (Adafruit AM2320) is a digital sensor that measures ambient temperature and humidity levels. It is based on the I2C communication protocol, allowing easy integration with the Arduino board. The sensor provides accurate and reliable temperature and humidity readings, making it suitable for environmental monitoring in rescue missions.</p>
+    <img src="IMG/temperature_humidity_sensor.png" alt="Temperature and Humidity Sensor (Adafruit AM2320)" class="sensor-img">
+    <h3>Key Features:</h3>
+    <ul>
+      <li>Provides accurate temperature and humidity measurements.</li>
+      <li>Digital output for easy integration with the Arduino board.</li>
+      <li>Low power consumption for extended operation.</li>
+    </ul>
+    <p>For more information, refer to the <a href="Files/temperature_humidity_sensor_datasheet.pdf" target="_blank">Temperature and Humidity Sensor (Adafruit AM2320) Datasheet</a>.</p>
+
+    <h2>Ultrasonic Distance Sensor (HC-SR04)</h2>
+    <p>The Ultrasonic Distance Sensor (HC-SR04) is a non-contact sensor that measures distances by sending and receiving ultrasonic waves. It consists of a transmitter and a receiver module, and it calculates distance based on the time taken for the sound waves to bounce back after hitting an obstacle. The sensor is widely used for navigation in dark rooms and obstacle detection.</p>
+    <img src="IMG/ultrasonic_sensor.png" alt="Ultrasonic Distance Sensor (HC-SR04)" class="sensor-img">
+    <h3>Key Features:</h3>
+    <ul>
+      <li>Non-contact distance measurement using ultrasonic waves.</li>
+      <li>Easy to use and integrate with the Arduino board.</li>
+      <li>Effective obstacle detection for safe navigation.</li>
+    </ul>
+    <p>For more information, refer to the <a href="Files/ultrasonic_sensor_datasheet.pdf" target="_blank">Ultrasonic Distance Sensor (HC-SR04) Datasheet</a>.</p>
+
+    <h2>GME 12864-13 OLED</h2>
+    <p>The GME 12864-13 OLED is a graphic display module with a resolution of 128x64 pixels. It is used to display real-time sensor readings and other information to the rescuer. The OLED module is connected to the Arduino board, allowing for easy data visualization and monitoring of the gauntlet's status.</p>
+    <img src="IMG/gme_oled.png" alt="GME 12864-13 OLED" class="sensor-img">
+    <h3>Key Features:</h3>
+    <ul>
+      <li>High-resolution graphic display.</li>
+      <li>Easy integration with the Arduino board.</li>
+      <li>Provides real-time data visualization.</li>
+    </ul>
+    <p>For more information, refer to the <a href="Files/gme_oled_datasheet.pdf" target="_blank">GME 12864-13 OLED Datasheet</a>.</p>
+
+    <h2>NeoPixel Ring 12</h2>
+    <p>The NeoPixel Ring 12 is a circular arrangement of 12 individually addressable RGB LEDs. It is used to respond to temperature and humidity values based on the code implemented in the Arduino board. The NeoPixel Ring provides visual feedback to the rescuer, changing colors and patterns based on environmental conditions.</p>
+    <img src="IMG/neopixel_ring.png" alt="NeoPixel Ring 12" class="sensor-img">
+    <h3>Key Features:</h3>
+    <ul>
+      <li>12 individually addressable RGB LEDs.</li>
+      <li>Can be controlled using the Arduino board.</li>
+      <li>Offers visual feedback based on temperature and humidity readings.</li>
+    </ul>
+    <p>For more information, refer to the <a href="Files/neopixel_ring_datasheet.pdf" target="_blank">NeoPixel Ring 12 Datasheet</a>.</p>
+
+    <h2>ADAfruit ESP32 Feather</h2>
+    <p>The ADAfruit ESP32 Feather is the main microcontroller board used in our gauntlet prototype. It is based on the ESP32 chip, providing Wi-Fi and Bluetooth capabilities. The ESP32 Feather acts as the brain of the gauntlet, processing sensor data, and controlling various components to ensure the rescuer's safety and provide real-time data monitoring.</p>
+    <img src="IMG/adafruit_esp32_feather.png" alt="ADAfruit ESP32 Feather" class="sensor-img">
+    <h3>Key Features:</h3>
+    <ul>
+      <li>Based on the ESP32 chip with Wi-Fi and Bluetooth support.</li>
+      <li>Offers ample I/O pins for sensor and component connections.</li>
+      <li>Used as the main microcontroller to process data and control the gauntlet's functionality.</li>
+    </ul>
+    <p>For more information, refer to the <a href="Files/adafruit_esp32_feather_datasheet.pdf" target="_blank">ADAfruit ESP32 Feather Datasheet</a>.</p>
+
+    <h2>Buzzer</h2>
+    <p>The buzzer is a simple audio component used in the gauntlet to provide audio alerts based on distance readings from the Ultrasonic Distance Sensor. It emits sound when the gauntlet detects obstacles or short distances, alerting the rescuer to potential hazards.</p>
+    <img src="IMG/buzzer.png" alt="Buzzer" class="sensor-img">
+    <h3>Key Features:</h3>
+    <ul>
+      <li>Provides audio alerts based on distance readings.</li>
+      <li>Simple and easy to integrate with the Arduino board.</li>
+      <li>Used to enhance situational awareness during rescue missions.</li>
+    </ul>
+    <p>For more information, refer to the <a href="Files/buzzer_datasheet.pdf" target="_blank">Buzzer Datasheet</a>.</p>
+    <p>.    </p>
+  </section>
+  <footer>
+    <p>Team AstroGears | Email: team@astrogears.w3spaces.com | Phone: +15108125869</p>
+  </footer>
+</body>
+</html>

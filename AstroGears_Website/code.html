@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Implementation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="IMG/logo.png" alt="RescueTech Logo">
+    </a>
+    <h1>Code Implementation</h1>
+    <p>Explore the implementation details of the Arduino code used in our gauntlet prototype.</p>
+  </header>
+  <nav>
+    <ul class="main-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prototype.html">Discover Our Gauntlet</a></li>
+      <li><a href="sensors.html">Sensor Details</a></li>
+      <li><a href="code.html">Code Implementation</a></li>
+      <li><a href="design.html">Design Process</a></li>
+      <li><a href="Real-TimeData.html" class="real-time">Real-Time Data</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Arduino Code Overview</h2>
+    <p>The Arduino code for our gauntlet prototype is responsible for reading data from various sensors, controlling components like the GME 12864-13 OLED and NeoPixel Ring 12, and providing audio feedback using the buzzer. It follows a modular structure with separate functions for each sensor and component.</p>
+
+    <h2>Gas Sensor Integration</h2>
+    <p>The Gas Sensor (MQ-135) is integrated into the Arduino code to continuously read analog data from the sensor's analog output pin. The code converts the analog readings into meaningful gas concentration values (PPM) and displays them on the GME 12864-13 OLED.</p>
+
+    <h2>Temperature and Humidity Sensor Integration</h2>
+    <p>The Temperature and Humidity Sensor (Adafruit AM2320) is connected to the Arduino board using the I2C communication protocol. The code communicates with the sensor to obtain temperature and humidity readings, which are then displayed on the GME 12864-13 OLED.</p>
+
+    <h2>Ultrasonic Distance Sensor Integration</h2>
+    <p>The Ultrasonic Distance Sensor (HC-SR04) is used to detect obstacles and measure distances. The code triggers ultrasonic pulses and calculates the time taken for the sound waves to bounce back, determining the distance to nearby objects. The buzzer makes audio feedback based on the distance readings.</p>
+
+    <h2>GME 12864-13 OLED Control</h2>
+    <p>The GME 12864-13 OLED is used to display real-time sensor data, including gas concentration, temperature, and humidity. The code updates the OLED display with new data at regular intervals.</p>
+
+    <h2>NeoPixel Ring 12 Interaction</h2>
+    <p>The NeoPixel Ring 12 visually responds to gas levels, temperature and humidity readings. The code maps the sensor values to different colors and patterns on the NeoPixel Ring, providing intuitive feedback to the rescuer.</p>
+
+    <h2>Buzzer Audio Feedback</h2>
+    <p>The code controls the buzzer to provide audio alerts when the Ultrasonic Distance Sensor detects obstacles at short distances. The buzzer emits different sounds to warn the rescuer of potential hazards.</p>
+    
+    <h2>Full Code Repository</h2>
+    <p>For the complete Arduino code used in our gauntlet prototype, you can access the GitHub repository below:</p>
+    <a href="https://github.com/cxelshal/AstroGears" target="_blank">Gauntlet Prototype Code Repository</a>
+    <p>.     </p>
+  </section>
+  <footer>
+    <p>Team AstroGears | Email: team@astrogears.w3spaces.com | Phone: +15108125869</p>
+  </footer>
+</body>
+</html>

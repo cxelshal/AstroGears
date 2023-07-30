@@ -1,0 +1,169 @@
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+background-color: #f2f2f2;
+color: #ffffff;
+}
+
+
+header {
+background-color: #222;
+color: #ddd;
+text-align: center;
+padding: 2rem;
+}
+
+
+header img {
+width: 200px;
+height: auto; /* Keep the aspect ratio */
+display: block;
+border: 2px solid #bbb;
+margin: 0 auto 1rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+
+header p {
+font-size: 1.1rem;
+}
+
+
+nav {
+background-color: #333;
+text-align: center;
+padding: 1rem;
+}
+
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+
+nav ul li {
+display: inline-block;
+margin: 0 1rem;
+}
+
+
+nav ul li a {
+color: #ddd;
+text-decoration: none;
+font-size: 1.2rem;
+padding: 0.5rem 1rem;
+border-radius: 8px;
+transition: background-color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+background-color: #555;
+}
+
+
+main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  flex-wrap: wrap; /* Wrap the sensors if they overflow the screen */
+}
+
+
+.sensor {
+background-color: #333333;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+padding: 1rem;
+margin-bottom: 1rem;
+width: 200px;
+}
+
+
+.sensor h2 {
+font-size: 1.2rem;
+margin-bottom: 1rem;
+}
+
+
+.sensor p {
+font-size: 1.5rem;
+text-align: center;
+margin: 0;
+}
+
+
+
+
+section {
+background-color: #fff;
+color: #333;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+padding: 2rem;
+margin-bottom: 2rem;
+}
+
+
+section h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+
+section p {
+font-size: 1.1rem;
+margin-bottom: 1rem;
+}
+
+
+section ul {
+margin-left: 2rem;
+}
+
+
+footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+footer p {
+font-size: 0.9rem;
+}
+
+.real-time {
+  background-color: #ff0008;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.real-time:hover {
+  background-color: #0056b3;
+}
+
+.info {
+  font-size: 1rem;
+  color: #fa0303; 
+  margin-top: 0.5rem;
+}

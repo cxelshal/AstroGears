@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="IMG/logo.png" alt="RescueTech Logo">
+    </a>
+    <h1>Prototype Details</h1>
+    <p>Welcome to our gauntlet prototype page. Here, we'll provide all the information about our design, sensors, code, and debugging process for the gauntlet.</p>
+  </header>
+    <nav>
+    <ul class="main-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prototype.html">Discover Our Gauntlet</a></li>
+      <li><a href="sensors.html">Sensor Details</a></li>
+      <li><a href="code.html">Code Implementation</a></li>
+      <li><a href="design.html">Design Process</a></li>
+      <li><a href="Real-TimeData.html" class="real-time">Real-Time Data</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Main Design Goals</h2>
+    <p>Our team had several design goals for the gauntlet:</p>
+    <ul>
+      <li>Enhanced safety features to navigate through the earthquake-stricken building.</li>
+      <li>Real-time monitoring of gas leaks, temperature, humidity, and distance to ensure the safety of the rescuer.</li>
+      <li>Aesthetically pleasing design to boost the credibility of the rescuer.</li>
+    </ul>
+
+    <h2>Sensor Selection</h2>
+    <p>We chose the following sensors for our mission:</p>
+    <ul>
+      <li>Gas Sensor (MQ-135): To detect dangerous gas leaks and provide early warnings.</li>
+      <li>Temperature and Humidity Sensor (Adafruit AM2320): To monitor environmental conditions.</li>
+      <li>Ultrasonic Distance Sensor (HC-SR04): To help navigate through dark rooms and obstacles.</li>
+    </ul>
+
+    <h2>Code Design</h2>
+    <p>Our Arduino code was carefully designed to achieve the following:</p>
+    <ul>
+      <li>Read data from the sensors: temperature, humidity, gas level, and distance.</li>
+      <li>Display real-time sensor data on the OLED screen.</li>
+      <li>Control the buzzer to provide audio alerts based on distance readings.</li>
+      <li>Adjust the RGB LED color based on the temperature reading.</li>
+    </ul>
+    <p>The code follows a modular approach, with separate functions for sensor readings and distance measurement.</p>
+
+    <h2>Problem Solving and Debugging</h2>
+    <p>During the development process, we encountered various challenges:</p>
+    <ul>
+      <li>Incorrect sensor readings: We used the engineering mindset to carefully check sensor connections and ensure proper wiring.</li>
+      <li>Unexpected behavior: We utilized the Serial Monitor to print sensor readings and troubleshoot issues with the code logic.</li>
+      <li>Iterative testing: We performed multiple iterations to improve the code and hardware based on real-world scenarios.</li>
+    </ul>
+
+    <h2>Iterative Design CAD</h2>
+    <p>Our gauntlet underwent multiple 3D printing iterations:</p>
+    <img src="IMG/initial_gauntlet_cad.png" alt="Initial Gauntlet CAD Design" class="CAD-img">
+    <p>During the design process, we made several changes to enhance the gauntlet's ergonomics, durability, and aesthetics.</p>
+    <img src="IMG/final_gauntlet_cad.png" alt="Final Gauntlet CAD Design" class="CAD-img">
+    <p>The final design reflects improvements made to optimize the gauntlet for rescue missions.</p>
+    <p>.    </p>
+  </section>
+  <footer>
+    <p>Team AstroGears | Email: team@astrogears.w3spaces.com | Phone: +15108125869</p>
+  </footer>
+</body>
+</html>

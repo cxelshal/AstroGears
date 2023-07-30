@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gauntlet Real Time Data</title>
+  <link rel="stylesheet" href="styleData.css">
+  <script>team_name = "AstroGears"</script>
+  <script type="module" src="communication.js"></script>
+</head>
+<body>
+  <header>
+    <a href="index.html"> 
+      <img src="IMG/logo.png" alt="RescueTech Logo">
+    </a>
+    <h1>Gauntlet Real Time Data</h1>
+  </header>
+    <nav>
+    <ul class="main-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prototype.html">Discover Our Gauntlet</a></li>
+      <li><a href="sensors.html">Sensor Details</a></li>
+      <li><a href="code.html">Code Implementation</a></li>
+      <li><a href="design.html">Design Process</a></li>
+      <li><a href="Real-TimeData.html" class="real-time">Real-Time Data</a></li>
+    </ul>
+  </nav>
+  <main>
+      <div class="sensor">
+      <h2>Temperature (C)</h2>
+      <p id="Temperature">Loading...</p> <!-- Placeholder text while waiting for data -->
+      <p id="TemperatureInfo" class="info"></p> <!-- Display additional info here -->
+    </div>
+    <div class="sensor">
+      <h2>Humidity (%)</h2>
+      <p id="Humidity">Loading...</p> <!-- Placeholder text while waiting for data -->
+      <p id="HumidityInfo" class="info"></p> <!-- Display additional info here -->
+    </div>
+    <div class="sensor">
+      <h2>Gas Level (PPM)</h2>
+      <p id="gasLevel">Loading...</p> <!-- Placeholder text while waiting for data -->
+      <p id="GasLevelInfo" class="info"></p> <!-- Display additional info here -->
+    </div>
+    <div class="sensor">
+      <h2>Distance (cm)</h2>
+      <p id="Distance">Loading...</p> <!-- Placeholder text while waiting for data -->
+      <p id="DistanceInfo" class="info"></p> <!-- Display additional info here -->
+    </div>
+  </main>
+  <footer>
+    <p>Team AstroGears | Email: team@astrogears.w3spaces.com | Phone: +1 510-812-5869</p>
+  </footer>
+</body>
+</html>
