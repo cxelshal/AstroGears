@@ -35,3 +35,17 @@
   - **AstroGears_ESP32Code.ino** - The main Arduino code used to control the sensors and interact with the website.
 
   - **HackPublisher.h** - A header file used to establish communication between the Arduino circuit and our website.
+
+
+
+ 
+## Challenges Encountered
+
+During the development process, we encountered various challenges:
+
+1. **Incorrect sensor readings:** We used the engineering mindset to carefully check sensor connections and ensure proper wiring.
+
+2. **Unexpected behavior:** We utilized the Serial Monitor to print sensor readings and troubleshoot issues with the code logic.
+
+3. **Iterative testing:** We performed multiple iterations to improve the code and hardware based on real-world scenarios.
+
